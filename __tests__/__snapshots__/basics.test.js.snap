@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. macros 1`] = `
+"
+import idx from '../idx.macro'
+
+idx(global, _ => _.test.lol);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+var _ref;
+
+(_ref = global) != null ? (_ref = _ref.test) != null ? _ref.lol : _ref : _ref;
+"
+`;

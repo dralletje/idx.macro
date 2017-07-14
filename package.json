@@ -1,0 +1,25 @@
+{
+  "name": "idx.macro",
+  "version": "1.0.0",
+  "description": "a 'babel-macros' implementation of 'babel-idx'",
+  "main": "idx.macro.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dralletje/idx.macro.git"
+  },
+  "author": "Michiel Dral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dralletje/idx.macro/issues"
+  },
+  "homepage": "https://github.com/dralletje/idx.macro#readme",
+  "dependencies": {
+    "babel-macros": "^0.5.1",
+    "babel-plugin-tester": "^3.2.2",
+    "babel-types": "^6.25.0",
+    "jest": "^20.0.4"
+  }
+}
