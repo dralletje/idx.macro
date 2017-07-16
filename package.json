@@ -1,6 +1,6 @@
 {
   "name": "idx.macro",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a 'babel-macros' implementation of 'babel-idx'",
   "main": "build/idx.macro.js",
   "scripts": {
