@@ -1,10 +1,11 @@
 {
   "name": "idx.macro",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a 'babel-macros' implementation of 'babel-idx'",
-  "main": "idx.macro.js",
+  "main": "build/idx.macro.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel idx.macro.js -d build"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,17 @@
   "homepage": "https://github.com/dralletje/idx.macro#readme",
   "dependencies": {
     "babel-macros": "^0.5.1",
+    "babel-types": "^6.25.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-plugin-tester": "^3.2.2",
-    "babel-types": "^6.25.0",
+    "babel-preset-env": "^1.6.0",
     "jest": "^20.0.4"
   }
 }
