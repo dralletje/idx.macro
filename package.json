@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "a 'babel-macros' implementation of 'babel-idx'",
   "main": "build/idx.macro.js",
+  "keywords": ["babel-macros", "babel", "idx"],
   "scripts": {
     "test": "jest",
     "build": "babel idx.macro.js -d build"
