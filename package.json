@@ -25,6 +25,9 @@
       "env"
     ]
   },
+  "dependencies": {
+    "babel-macros": "^1.0.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-tester": "^3.2.2",
