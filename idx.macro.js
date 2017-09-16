@@ -1,4 +1,5 @@
 const t = require('babel-types');
+const { createMacro } = require('babel-macros');
 
 function checkIdxArguments(file, node) {
   const args = node.arguments;
@@ -109,7 +110,7 @@ const idx_transform = (path, state) => {
   path.scope.push({id: temp});
 }
 
-module.exports = ({ state, references }) => {
+module.exports = createMacro(({ state, references }) => {
   references.default.forEach(referencePath => {
     if (referencePath.parentPath.type === 'CallExpression') {
       idx_transform(referencePath.parentPath, state);
@@ -118,4 +119,4 @@ module.exports = ({ state, references }) => {
       throw Error(`Oh boi`);
     }
   })
-}
+});
