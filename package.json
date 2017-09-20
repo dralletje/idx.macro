@@ -1,6 +1,6 @@
 {
   "name": "idx.macro",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "a 'babel-macros' implementation of 'babel-idx'",
   "main": "build/idx.macro.js",
   "keywords": [
@@ -23,15 +23,12 @@
   },
   "homepage": "https://github.com/dralletje/idx.macro#readme",
   "dependencies": {
-    "babel-types": "^6.25.0"
+    "babel-macros": "^1.0.1"
   },
   "babel": {
     "presets": [
       "env"
     ]
-  },
-  "dependencies": {
-    "babel-macros": "^1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
