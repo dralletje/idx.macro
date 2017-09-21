@@ -2,6 +2,9 @@
 
 var t = require('babel-types');
 
+var _require = require('babel-macros'),
+    createMacro = _require.createMacro;
+
 function checkIdxArguments(file, node) {
   var args = node.arguments;
   if (args.length !== 2) {
@@ -61,7 +64,7 @@ var idx_transform = function idx_transform(path, state) {
   path.scope.push({ id: temp });
 };
 
-module.exports = function (_ref) {
+module.exports = createMacro(function (_ref) {
   var state = _ref.state,
       references = _ref.references;
 
@@ -72,4 +75,4 @@ module.exports = function (_ref) {
       throw Error('Oh boi');
     }
   });
-};
+});
