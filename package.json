@@ -17,7 +17,7 @@
     "url": "git+https://github.com/dralletje/idx.macro.git"
   },
   "author": "Michiel Dral",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dralletje/idx.macro/issues"
   },
