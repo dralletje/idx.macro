@@ -5,6 +5,7 @@
   "main": "build/idx.macro.js",
   "keywords": [
     "babel-macros",
+    "babel-plugin-macros",
     "babel",
     "idx"
   ],
