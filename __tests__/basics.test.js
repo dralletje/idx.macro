@@ -1,9 +1,10 @@
 const path = require('path');
 const pluginTester = require('babel-plugin-tester');
-const plugin = require('babel-macros');
+const plugin = require('babel-plugin-macros').default;
 
 pluginTester({
   plugin,
+  pluginName: 'Babel plugin macros',
   snapshot: true,
   tests: withFilename([
     `

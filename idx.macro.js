@@ -1,5 +1,5 @@
 const t = require('babel-types');
-const { createMacro } = require('babel-macros');
+const { createMacro } = require('babel-plugin-macros');
 
 function checkIdxArguments(file, node) {
   const args = node.arguments;
@@ -116,7 +116,7 @@ module.exports = createMacro(({ state, references }) => {
       idx_transform(referencePath.parentPath, state);
     }
     else {
-      throw Error(`Oh boi`);
+      throw Error(`idx.macro can only be used a function, and can not be passed around as an argument.`);
     }
   })
 });
