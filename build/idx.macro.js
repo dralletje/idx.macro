@@ -2,7 +2,7 @@
 
 var t = require('babel-types');
 
-var _require = require('babel-macros'),
+var _require = require('babel-plugin-macros'),
     createMacro = _require.createMacro;
 
 function checkIdxArguments(file, node) {
@@ -72,7 +72,7 @@ module.exports = createMacro(function (_ref) {
     if (referencePath.parentPath.type === 'CallExpression') {
       idx_transform(referencePath.parentPath, state);
     } else {
-      throw Error('Oh boi');
+      throw Error('idx.macro can only be used a function, and can not be passed around as an argument.');
     }
   });
 });
