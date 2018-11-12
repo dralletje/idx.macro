@@ -11,8 +11,9 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel idx.macro.js -d build"
+    "build": "babel idx.macro.js -d build && cp ./index.d.ts ./build/"
   },
+  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dralletje/idx.macro.git"
