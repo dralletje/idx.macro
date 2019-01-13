@@ -35,7 +35,7 @@ Please please please https://github.com/tc39/proposal-optional-chaining
 
 ## License
 
-`idx` is [BSD licensed](./LICENSE). I copied it from the facebook idx license.
+`idx` is [MIT licensed](./LICENSE). I copied it from the facebook idx license.
 I have no idea if I am doing this right (what is the PATENTS file?!), so please
 let me know if you know anything about this.
 
