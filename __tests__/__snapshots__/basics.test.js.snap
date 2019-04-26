@@ -8,8 +8,8 @@ idx(global, _ => _.test.lol);
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import idx from '../idx.macro';
+var _ref;
 
-idx(global, _ => _.test.lol);
+(_ref = global) != null ? (_ref = _ref.test) != null ? _ref.lol : _ref : _ref;
 "
 `;
