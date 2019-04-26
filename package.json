@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/dralletje/idx.macro#readme",
   "dependencies": {
+    "@babel/types": "^7.4.0",
     "babel-plugin-macros": "^2.4.2"
   },
   "babel": {
