@@ -13,3 +13,20 @@ var _ref;
 (_ref = global) != null ? (_ref = _ref.test) != null ? _ref.lol : _ref : _ref;
 "
 `;
+
+exports[`1. Babel plugin macros v2 1`] = `
+"
+import idx from '../idx.macro'
+import nonexisting from '/notexisting'
+
+idx(nonexisting, _ => _[1][2][3]);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+var _ref;
+
+import nonexisting from '/notexisting';
+
+(_ref = nonexisting) != null ? (_ref = _ref[1]) != null ? (_ref = _ref[2]) != null ? _ref[3] : _ref : _ref : _ref;
+"
+`;

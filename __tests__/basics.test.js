@@ -15,6 +15,20 @@ pluginTester({
   ]),
 });
 
+pluginTester({
+  plugin,
+  pluginName: 'Babel plugin macros v2',
+  snapshot: true,
+  tests: withFilename([
+    `
+      import idx from '../idx.macro'
+      import nonexisting from '/notexisting'
+
+      idx(nonexisting, _ => _[1][2][3]);
+    `,
+  ]),
+});
+
 /*
  * This adds the filename to each test so you can do require/import relative
  * to this test file.

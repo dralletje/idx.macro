@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel idx.macro.js -d build && cp ./index.d.ts ./build/"
+    "build": "babel idx.macro.js -d build && cp ./index.d.ts ./build/",
+    "prepublish": "npm run build"
   },
   "typings": "./index.d.ts",
   "repository": {
