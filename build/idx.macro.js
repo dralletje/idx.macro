@@ -1,6 +1,6 @@
 'use strict';
 
-var t = require('babel-types');
+var t = require('@babel/types');
 
 var _require = require('babel-plugin-macros'),
     createMacro = _require.createMacro;

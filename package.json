@@ -1,6 +1,6 @@
 {
   "name": "idx.macro",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "description": "a 'babel-macros' implementation of 'babel-idx'",
   "main": "build/idx.macro.js",
   "keywords": [
@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "babel idx.macro.js -d build && cp ./index.d.ts ./build/"
+    "build": "babel idx.macro.js -d build && cp ./index.d.ts ./build/",
+    "prepublish": "npm run build"
   },
   "typings": "./index.d.ts",
   "repository": {
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/dralletje/idx.macro#readme",
   "dependencies": {
+    "@babel/types": "^7.4.0",
     "babel-plugin-macros": "^2.4.2"
   },
   "babel": {
