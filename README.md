@@ -1,5 +1,14 @@
 # idx.macro
 
+## No longer necessary 🍾 🎉
+
+The day has arrived! A lot of environments now support [Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining), which does exactly what this macro does but better looking (and native and blablabla but I care about the looksss 😎 😏 ).
+
+Not sure if there is any use for this, as most people that have babel-macros support most likely also have babel doing optional chaining now..
+Idk I'll leave this up for now and maybe archive when I look back in a year or so 🤷‍♀️
+
+## idx.macro
+
 This is a [babel-macros](https://github.com/kentcdodds/babel-macros) version of
 the [babel plugin idx](https://github.com/facebookincubator/idx).
 
@@ -28,10 +37,6 @@ const fiends_of_friends =
   props.user.friends[0] == null ? props.user.friends[0] :
   props.user.friends[0].friends
 ```
-
-## Soon?
-
-Please please please https://github.com/tc39/proposal-optional-chaining
 
 ## License
 
